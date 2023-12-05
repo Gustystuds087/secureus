@@ -1,0 +1,65 @@
+<% layout('layouts/boilerplate') %>
+<div class="whole-page">
+  <div class="maincontainer">
+    <div class="contact-us1">
+      <h3 style="font-size: 40px">Contact Us</h3>
+      <p style="font-size: 17px">
+        Contact us-feel free to reach out to us for your valuable suggestions or
+        queries.
+      </p>
+      <div style="padding: 20px">
+        <div style="padding-top: 20px; display: flex; align-items: center">
+          <ion-icon style="padding-right: 10px" name="call"></ion-icon>+91
+          8707295201
+        </div>
+        <div style="padding-top: 40px; display: flex; align-items: center">
+          <ion-icon style="padding-right: 10px" name="mail-outline"></ion-icon>
+          wesafe.2022@gmail.com
+        </div>
+        <div style="position: absolute; bottom: 5%">
+          <a style="color: white" href="#"
+            ><ion-icon
+              size="large"
+              class="icons"
+              name="logo-facebook"
+            ></ion-icon
+          ></a>
+          <a style="color: white" href="#"
+            ><ion-icon size="large" class="icons" name="logo-twitter"></ion-icon
+          ></a>
+          <a style="color: white" href="#"
+            ><ion-icon
+              size="large"
+              class="icons"
+              name="logo-linkedin"
+            ></ion-icon
+          ></a>
+          <a style="color: white" href="#"
+            ><ion-icon
+              size="large"
+              class="icons"
+              name="logo-instagram"
+            ></ion-icon
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- input form -->
+    <form action="https://formspree.io/f/xayaqzlg" method="POST" id="my-form">
+      <div class="contact-us2">
+        <b class="flex-center-align">Your Name</b>
+        <input type="text" name="name" placeholder="Enter your Name" />
+        <b class="flex-center-align">Email Address</b>
+        <input type="email" placeholder="email@example.com" name="email" />
+        <b class="flex-center-align">Your Message / Feedback</b>
+
+        <textarea rows="6" name="message"></textarea>
+        <div>
+          <button class="message-btn" type="submit">Send Message</button>
+        </div>
+        <p id="my-form-status"></p>
+      </div>
+    </form>
+  </div>
+</div>

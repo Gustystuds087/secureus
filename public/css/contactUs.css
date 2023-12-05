@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap');
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .contact-us2 {
+    position: absolute !important;
+    left: 6% !important;
+    width: 20rem !important;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 400px) {
+  .contact-us2 {
+    width: 17rem !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contact-us2 {
+    width: 16rem !important;
+    left: 2% !important;
+    position: absolute !important;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  .contact-us2 {
+    position: absolute !important;
+    left: 10% !important;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  .contact-us2 {
+    position: absolute !important;
+    left: 8% !important;
+    width: 23rem !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .maincontainer {
+    width: 90% !important;
+    display: block !important;
+    position: absolute !important;
+    top: 2% !important;
+    height: 68rem !important;
+    padding: 2rem !important;
+    padding-top: 7rem !important;
+  }
+  .contact-us1 {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .contact-us2 {
+    position: absolute !important;
+    left: 20% !important;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1050px) {
+  .maincontainer {
+    width: 90% !important;
+  }
+  .contact-us2 {
+    width: 20rem !important;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+textarea {
+  border: 1px solid rgb(216, 208, 208);
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+}
+
+.whole-page {
+  font-family: inherit;
+  line-height: inherit;
+
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-ring-inset: var(--tw-empty);
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  position: absolute;
+  border-color: #e5e7eb;
+
+  /*--tw-gradient-to: #8b5cf6; */
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  height: 30rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+  --tw-text-opacity: 1;
+  position: absolute;
+  width: 1023px;
+  color: white;
+  padding: 3rem;
+}
+.contact-us1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 62rem;
+  padding: 2rem;
+}
+.contact-us2 {
+  border: 2px solid white;
+  background-color: white;
+  width: 23rem;
+  height: 26rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  color: black;
+  display: grid;
+}
+.flex-center-align {
+  display: flex;
+  padding: 6px 0px 1px 10px;
+  align-items: center;
+}
+.message-btn {
+  border: 1px solid rgb(216, 208, 208);
+  border-radius: 6px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  float: right;
+  background-color: rgb(45, 100, 150);
+  color: white;
+  padding: 8px;
+}
+.message-btn:hover {
+  background-color: rgb(5, 58, 107);
+  color: rgb(243, 243, 86);
+  border: none;
+  font-size: 15px;
+}
+.icons {
+  margin: 5px;
+}

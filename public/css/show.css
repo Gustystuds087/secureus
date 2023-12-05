@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@media screen and (max-width: 1000px) and (min-width: 570px) {
+  .show-page-container {
+    font-size: 1.4rem !important;
+  }
+  .Company-name {
+    font-size: 4.4rem !important;
+  }
+}
+@media screen and (max-width: 570px) and (min-width: 460px) {
+  .show-page-container {
+    font-size: 1.3rem !important;
+  }
+  .Company-name {
+    font-size: 4.2rem !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .show-page-container {
+    font-size: 1.2rem !important;
+    grid-gap: 8px !important;
+    padding: 17px !important;
+  }
+  .Company-name {
+    font-size: 3.2rem !important;
+  }
+  .show-page-btn-container {
+    display: grid !important;
+  }
+  .show-page-edit-btn {
+    margin-right: 0px !important;
+  }
+}
+
+.Company-name {
+  color: wheat;
+  font-size: 4.8rem;
+}
+.show-page-btn-container {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.show-page-container {
+  color: white;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+.show-page-container {
+  font-size: 1.6rem;
+  padding: 35px;
+  /* --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
+  box-shadow: inset 8px 8px 16px 0 rgba(159, 74, 198, 0.2),
+    inset -8px -8px 16px 0 rgba(93, 21, 108, 0.4);
+  border-radius: 30px;
+  margin-top: 4rem;
+}
+.show-page-content {
+  font-family: ubuntu, sans-serif;
+}
+.show-page-btn {
+  min-width: 10rem;
+  background: white;
+  color: purple;
+  border: 1px solid purple;
+  border-radius: 18px;
+}
+.show-page-btn:hover {
+  border-color: white;
+  animation: jelly 0.5s;
+}
+.show-page-edit-btn {
+  margin-right: 26px;
+}
+.show-page-edit-btn:hover {
+  background-color: rgb(252, 211, 77);
+  color: deeppink;
+}
+.show-page-delete-btn:hover {
+  background-color: red;
+  color: white;
+}
+.show-page-go-back-btn:hover {
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

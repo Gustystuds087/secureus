@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KITPLACE</title>
+    <link rel="shortcut icon" type="image/jpeg" href="img/logo.png" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="
+      w-screen
+      h-screen
+      bg-gradient-to-tr
+      from-purple-800
+      to-purple-500
+      text-white
+      flex flex-col
+    "
+  >
+    <div
+      class="
+        absolute
+        h-full
+        w-full
+        flex flex-col
+        justify-center
+        px-20
+        text-3xl
+        gap-8
+        hidden
+        duration-500
+        opacity-0
+      "
+      style="
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(32px);
+        transition-property: all;
+      "
+      id="overlay"
+    >
+      <a href="/">Home</a>
+      <a href="/about-us">About Us</a>
+      <a href="/pricing">Our pricing</a>
+      <a href="/team">Our Team</a>
+      <a href="/contact-us">Contact Us</a>
+      <a id="close">Close</a>
+    </div>
+
+    <div
+      class="
+        w-full
+        h-16
+        bg-white
+        text-gray-900
+        items-center
+        justify-center
+        px-4
+        gap-12
+        shadow
+        text-2xl
+        hidden
+        md:flex
+      "
+    >
+      <a href="/">Home</a>
+      <a href="/about-us">About Us</a>
+      <a href="/pricing">Our pricing</a>
+      <a href="/team">Our Team</a>
+      <a href="/contact-us">Contact Us</a>
+    </div>
+    <div
+      class="
+        w-full
+        h-16
+        bg-white
+        text-gray-900
+        items-end
+        justify-center
+        px-4
+        gap-8
+        shadow
+        text-2xl
+        flex flex-col
+        md:hidden
+      "
+    >
+      <button id="ham">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="w-full text-center"><%- include('../partials/flash') %></div>
+
+    <div class="w-full h-full flex flex-col items-center justify-center">
+      <div class="flex items-center justify-center rounded-lg h-100 shadow-xl">
+        <div
+          style="width: 44rem"
+          class="
+            h-full
+            flex-col
+            justify-center
+            p-8
+            bg-gradient-to-tr
+            from-purple-800
+            to-purple-500
+            rounded-l-lg
+            hidden
+            lg:flex
+          "
+        >
+          <h1 class="text-6xl">
+            KIT<span class="font-bold text-yellow-300">PLACE</span>
+          </h1>
+          <div class="h-4"></div>
+          <p class="text-xl">
+            Enter your details(signup- make an account for free now) and explore
+            our exclusive services which are just a click away!! Your email id
+            or name is not shared with anyone as we respect your privacy.
+          </p>
+        </div>
+        <div
+          class="
+            w-80
+            bg-gray-100
+            p-4
+            shadow-lg
+            text-gray-900
+            h-full
+            rounded-r-lg
+            flex flex-col
+            justify-center
+            rounded-l-lg
+            lg:rounded-l-none
+          "
+        >
+          <h2 class="text-3xl">Register</h2>
+          <div class="h-4"></div>
+          <form action="/register" method="POST">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              class="
+                w-full
+                px-3
+                py-2
+                bg-white
+                rounded
+                outline-none
+                shadow
+                hover:shadow-xl
+                focus:shadow-xl
+                focus:ring-2 focus:ring-purple-800
+                transition-shadow
+                duration-500
+              "
+              required
+            />
+            <div class="h-4"></div>
+            <input
+              type="text"
+              placeholder=" Username"
+              name="username"
+              class="
+                w-full
+                px-3
+                py-2
+                bg-white
+                rounded
+                outline-none
+                shadow
+                hover:shadow-xl
+                focus:shadow-xl
+                focus:ring-2 focus:ring-purple-800
+                transition-shadow
+                duration-500
+              "
+              required
+            />
+            <div class="h-4"></div>
+            <input
+              type="email"
+              placeholder="E-mail"
+              name="email"
+              class="
+                w-full
+                px-3
+                py-2
+                bg-white
+                rounded
+                outline-none
+                shadow
+                hover:shadow-xl
+                focus:shadow-xl
+                focus:ring-2 focus:ring-purple-800
+                transition-shadow
+                duration-500
+              "
+              required
+            />
+            <div class="h-4"></div>
+
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              class="
+                w-full
+                px-3
+                py-2
+                bg-white
+                rounded
+                outline-none
+                shadow
+                hover:shadow-xl
+                focus:shadow-xl
+                focus:ring-2 focus:ring-purple-800
+                transition-shadow
+                duration-500
+              "
+              required
+            />
+            <div class="h-4"></div>
+            <input
+              type="password"
+              name="confirm"
+              placeholder="Confirm Password"
+              class="
+                w-full
+                px-3
+                py-2
+                bg-white
+                rounded
+                outline-none
+                shadow
+                hover:shadow-xl
+                focus:shadow-xl
+                focus:ring-2 focus:ring-purple-800
+                transition-shadow
+                duration-500
+              "
+              required
+            />
+            <div class="h-2"></div>
+
+            <p>
+              By Signing in you agree to the
+              <a href="/terms-and-conditions" class="text-purple-800 font-bold"
+                >Terms and conditions
+              </a>
+            </p>
+            <div class="h-2"></div>
+            <button
+              type="submit"
+              class="
+                px-4
+                py-2
+                rounded
+                outline-none
+                bg-purple-800
+                w-full
+                text-white
+                shadow-lg
+                hover:shadow-xl
+                focus:shadow-xl
+                transition-shadow
+                duration-500
+              "
+            >
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const overlay = document.querySelector('#overlay');
+
+      const button = document.querySelector('#ham');
+      button.addEventListener('click', () => {
+        overlay.classList.remove('hidden');
+        overlay.classList.add('opacity-100');
+        overlay.classList.remove('opacity-0');
+      });
+
+      const close = document.querySelector('#close');
+      close.addEventListener('click', (e) => {
+        e.preventDefault();
+        overlay.classList.add('hidden');
+        overlay.classList.remove('opacity-100');
+        overlay.classList.add('opacity-0');
+      });
+    </script>
+  </body>
+</html>

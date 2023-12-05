@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@media screen and (max-width: 400px) {
+  .form-box {
+    width: 320px !important;
+  }
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+  .modal-content {
+    width: 90% !important;
+  }
+  .search-btn {
+    margin-left: -5rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .close-btn {
+    right: 3px !important;
+    top: -26px !important;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .modal-content {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .form-inline .input-group {
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  .shift {
+    margin-left: 15px !important;
+  }
+  .search-bar {
+    width: 70% !important;
+    font-size: 15px !important;
+  }
+  .card-btn {
+    font-size: 15px !important;
+    width: 16% !important;
+    margin-right: 0% !important;
+    height: 37px !important;
+  }
+  .search-btn {
+    font-size: 15px !important;
+    margin-top: 0rem !important;
+    height: 33px !important;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .shift {
+    margin-left: 16px !important;
+  }
+  .username {
+    margin-left: 20px !important;
+    font-size: 20px !important;
+    margin-top: 5px !important;
+  }
+  .card-btn {
+    width: 18% !important;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  .form-inline .input-group {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .shift {
+    margin-left: 25px !important;
+  }
+  .username {
+    margin-left: 20px !important;
+  }
+  .card-btn {
+    width: 17% !important;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .form-inline .input-group {
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  .shift {
+    margin-left: 0px !important;
+  }
+
+  .username {
+    margin-left: 15px !important;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  .form-inline .input-group {
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  .shift {
+    margin-left: 0px !important;
+  }
+
+  .navbar li a {
+    padding: 15px 10px 15px 30px !important;
+  }
+
+  .username {
+    margin-left: 20px !important;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .form-inline .input-group {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .shift {
+    margin-left: 0px !important;
+  }
+
+  .username {
+    margin-left: 50px !important;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .form-inline .input-group {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .shift {
+    margin-left: 0px !important;
+  }
+  .username {
+    margin-left: 0px !important;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1496px) {
+  .form-inline .input-group {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .shift {
+    margin-left: 2% !important;
+  }
+  .username {
+    margin-left: 50px !important;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: rgba(65, 161, 187, 0.292); */
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 16%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.form-control {
+  box-shadow: none;
+  font-weight: normal;
+  font-size: 13px;
+}
+.form-control:focus {
+  border-color: #33cabb;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.shift {
+  margin-left: 6%;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
+  margin: 0px;
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.9),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+}
+.card-btn {
+  width: 13%;
+  padding: 3px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: white;
+  opacity: 85%;
+  color: rgb(40, 40, 226);
+  border: none;
+  height: 44px;
+  margin-left: 2rem !important;
+  margin-top: 0px;
+}
+.card-btn:hover,
+.search-btn:hover {
+  background-color: #090979;
+  border: 1px solid white;
+  color: #fada5e;
+  animation: jelly 0.5s;
+}
+.search-btn {
+  margin-left: -5rem;
+  font-size: 20px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 0px 9px 9px 0px;
+  width: 69px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.card-details-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background: linear-gradient(
+    90deg,
+    rgb(209, 215, 234) 16%,
+    rgb(208, 236, 248) 100%
+  );
+  margin: 5% auto 15% auto;
+  border: 1px solid rgb(5, 5, 5);
+  width: 50%;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+/* The Close Button (x) */
+.close-btn {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.bottom-border {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0 !important;
+  border-color: #757070;
+}
+.bg-none {
+  background: none !important;
+}
+.add-card-form-btn {
+  padding: 8px 50px 5px 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  margin: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: white;
+  opacity: 85%;
+  color: rgb(40, 40, 226) !important;
+  border: none;
+  height: 44px;
+}
+.add-card-form-btn:hover {
+  background-color: #090979 !important;
+  border: 2px solid white;
+  color: #fada5e !important;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.col-4 {
+  width: 31%;
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+.cards {
+  border: 2px solid black;
+  background-color: white;
+  color: rgb(64, 64, 64);
+  font-size: 20px;
+  border-radius: 32px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 25px 0px 0px 19px;
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.9);
+}
+.cards:hover {
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 1);
+  padding: 24px;
+  animation: jelly 0.5s;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Change styles for span and cancel button on extra small screens
+@media screen and (max-width: 300px) {
+
+} */

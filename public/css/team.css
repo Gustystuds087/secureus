@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap');
+@media screen and (max-width: 768px) {
+  .card-1,
+  .backside-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .dis-none-1200 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .card {
+    padding: 32px;
+  }
+  .section-title {
+    font-size: 41px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .card-1,
+  .backside-1 {
+    visibility: visible !important;
+    display: none;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 50px;
+  margin-top: 0px;
+}
+.round-top-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -64px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#team .card {
+  border: none;
+  background: #ffffff;
+  border-radius: 30px;
+  height: 360px;
+  width: 340px;
+}
+.container {
+  padding: 40px;
+}
+
+.frontside {
+  position: relative;
+
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.frontside,
+.backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+  min-height: 312px;
+}
+
+.card-text {
+  margin: 0px -25px 10px;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: black !important;
+  margin-top: -25px;
+}
+
+.frontside .card .card-body img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: -36px;
+}
+.card-1,
+.backside-1 {
+  visibility: hidden;
+}
+.card:hover {
+  animation: jelly 0.5s;
+}

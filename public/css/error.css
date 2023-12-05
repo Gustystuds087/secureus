@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap');
+@media screen and (max-width: 370px) {
+  .circle-1 {
+    width: 330px !important;
+    height: 330px !important;
+    margin-left: 9px !important;
+  }
+  .circle-2 {
+    width: 250px !important;
+    height: 250px !important;
+    font-size: 5rem !important;
+  }
+  .mar-top-20{
+    margin-top:20px !important;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 430px) {
+  .circle-1 {
+    width: 330px !important;
+    height: 330px !important;
+    margin-left: 19px !important;
+  }
+  .circle-2 {
+    width: 250px !important;
+    height: 250px !important;
+    font-size: 5rem !important;
+  }
+  .mar-top-20{
+    margin-top:20px !important;
+  }
+}
+@media screen and (max-width:600px) and (min-width:430px){
+  .circle-1{
+    width: 400px !important;
+    height: 400px !important;
+  }
+  .circle-2{
+    width: 300px !important;
+    height: 300px !important;
+    font-size: 6rem !important;
+  }
+}
+.mar-top-20{
+  margin-top:54px;
+}
+.main-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+}
+.circle-1 {
+  /* border: 2px solid black; */
+  width: 500px;
+  height: 500px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 26, 64);
+  box-shadow: 0px 1rem 3rem rgba(183, 10, 230, 0.18);
+  margin-left: 30px;
+}
+.circle-2 {
+  /* border: 2px solid black; */
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: rgb(82, 59, 107);
+  box-shadow: 0px 1rem 3rem rgba(199, 180, 204, 0.3);
+  font-size: 7rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-family: barlow;
+  color: wheat;
+}
+.home-btn {
+  z-index: 100;
+  padding: 5px 0px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid purple;
+  cursor: pointer;
+  color: purple;
+  max-width: 9rem;
+  min-width: 8rem;
+}
+.home-btn:hover {
+  color: wheat;
+  background-color: purple;
+  border: 1px solid white;
+  animation: jelly 0.5s;
+}
+.anim-1 {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+
+  position: absolute;
+
+  left: 10%;
+  top: 25%;
+  animation: anim1 10s infinite;
+  background: rgb(128, 129, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(128, 129, 240, 1) 0%,
+    rgba(186, 117, 255, 1) 35%,
+    rgba(210, 115, 250, 1) 100%
+  );
+
+  z-index: 10;
+}
+.anim-2 {
+  width: 80px;
+  height: 50px;
+  border-radius: 20px;
+
+  position: absolute;
+  animation: anim2 7s infinite;
+  left: 80%;
+  top: 50%;
+  background: rgb(255, 220, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 220, 180, 1) 0%,
+    rgba(255, 186, 152, 1) 35%,
+    rgba(255, 184, 155, 1) 100%
+  );
+  z-index: 10;
+}
+.anim-3 {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 30%;
+  top: 38%;
+  animation: anim3 5s infinite;
+  background: rgb(188, 171, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(188, 171, 241, 1) 0%,
+    rgba(212, 35, 244, 1) 35%,
+    rgba(210, 48, 133, 1) 100%
+  );
+  z-index: 10;
+}
+.anim-4 {
+  width: 70px;
+  height: 10px;
+  border-radius: 15px;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  animation: anim4 4s infinite;
+  background: rgb(240, 165, 99);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 165, 99, 1) 0%,
+    rgba(244, 126, 35, 1) 35%,
+    rgba(219, 115, 8, 1) 100%
+  );
+  z-index: 10;
+}
+.anim-5 {
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  animation: anim5 10s infinite;
+  background: rgb(128, 129, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(128, 129, 240, 1) 0%,
+    rgba(186, 117, 255, 1) 35%,
+    rgba(210, 115, 250, 1) 100%
+  );
+
+  z-index: 10;
+}
+.anim-6 {
+  width: 80px;
+  height: 50px;
+  border-radius: 30px;
+
+  position: absolute;
+
+  left: 10%;
+  top: 30%;
+  animation: anim3 10s infinite;
+  background: rgb(99, 240, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(99, 240, 240, 1) 0%,
+    rgba(247, 132, 43, 1) 35%,
+    rgba(247, 8, 129, 1) 100%
+  );
+  z-index: 10;
+}
+.anim-7 {
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+
+  position: absolute;
+
+  left: 10%;
+  top: 70%;
+  animation: anim2 10s infinite;
+  background: rgb(99, 240, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(99, 240, 240, 1) 0%,
+    rgba(247, 132, 43, 1) 35%,
+    rgba(247, 8, 129, 1) 100%
+  );
+  z-index: 10;
+}
+.anim-8 {
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+  position: absolute;
+  left: 15%;
+  top: 55%;
+  animation: anim4 10s infinite;
+  background: rgb(188, 171, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(188, 171, 241, 1) 0%,
+    rgba(212, 35, 244, 1) 35%,
+    rgba(210, 48, 133, 1) 100%
+  );
+
+  z-index: 10;
+}
+
+@keyframes anim1 {
+  0% {
+    left: 10%;
+  }
+  25% {
+    left: 44%;
+    width: 40px;
+  }
+  50% {
+    left: 79%;
+    width: 80px;
+  }
+  75% {
+    left: 44%;
+    width: 40px;
+  }
+  100% {
+    left: 10%;
+  }
+}
+@keyframes anim2 {
+  0% {
+    left: 80%;
+    width: 40px;
+  }
+  25% {
+    left: 65%;
+    width: 80px;
+  }
+  50% {
+    left: 20%;
+    width: 40px;
+  }
+  75% {
+    left: 65%;
+    width: 80px;
+  }
+  100% {
+    left: 80%;
+    width: 40px;
+  }
+}
+@keyframes anim3 {
+  0% {
+    left: 30%;
+  }
+  25% {
+    left: 80%;
+    width: 60px;
+  }
+  50% {
+    left: 30%;
+    width: 100px;
+  }
+  75% {
+    left: 10%;
+    width: 60px;
+  }
+  100% {
+    left: 30%;
+  }
+}
+
+@keyframes anim4 {
+  0% {
+    left: 15%;
+  }
+  25% {
+    left: 50%;
+    width: 60px;
+  }
+  50% {
+    left: 80%;
+    width: 70px;
+  }
+  75% {
+    left: 50%;
+    width: 60px;
+  }
+  100% {
+    left: 15%;
+  }
+}
+
+@keyframes anim5 {
+  0% {
+    left: 30%;
+    width: 100px;
+  }
+  25% {
+    left: 80%;
+    width: 60px;
+  }
+  50% {
+    left: 30%;
+    width: 200px;
+  }
+  75% {
+    left: 80%;
+    width: 60px;
+  }
+  100% {
+    left: 30%;
+    width: 100px;
+  }
+}

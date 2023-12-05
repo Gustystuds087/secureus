@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap');
+@media screen and (max-width: 988px) {
+  .navbar {
+    padding: 1rem !important;
+  }
+  #navbarSupportedContent > ul {
+    padding-left: 0.8rem !important;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 0.8rem 0rem !important;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background: white;
+  padding: -1rem 8rem !important;
+  z-index: 1000;
+}
+.navbar-nav {
+  padding-right: 70px;
+}
+.navbar .navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+nav img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-top: 7px;
+  float: left;
+  margin-right: 10px;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: black;
+  font-size: 1.5rem;
+  padding: 0rem 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active {
+  color: blueviolet;
+  border-bottom: 4px solid purple;
+}
+
+#navbarSupportedContent > button {
+  background: purple;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}

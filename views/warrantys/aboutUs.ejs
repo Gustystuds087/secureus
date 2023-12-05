@@ -1,0 +1,90 @@
+<% layout('layouts/boilerplate') %>
+<div class="mid" style="height: 82vh">
+  <video autoplay muted loop>
+    <source
+      class="embed-responsive"
+      src="img/about_front.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <div class="hero text-center">
+    <h2 class="text-light display-4 font-weight-bold heading">
+      Empowering your career
+    </h2>
+    <h2 class="text-light mx-auto">
+      Discover top job placements with us
+    </h2>
+    <br>
+    <a class="text-dark" href="<%= currentUser ? 'warrantys' : '/' %>"
+      >Get Started</a
+    >
+  </div>
+</div>
+
+<section class="about py-5">
+  <div class="row align-items-center container my-5 mx-auto">
+    <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+      <!-- <h6>For Free</h6> -->
+      <h2>Our Mission and Values</h2>
+      <p>
+        Our mission is to connect talented individuals with their dream job opportunities by providing a user-friendly, comprehensive, and efficient placement dashboard website.
+      </p>
+    </div>
+    <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 hov-anim-jelly">
+      <img class="img-fluid" src="img/about1.jpg" />
+    </div>
+  </div>
+</section>
+
+<section
+  class="discovery py-5"
+  style="padding: 6px !important ; background-color: purple"
+>
+  <div class="row align-items-center container my-5 mx-auto">
+    <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 hov-anim-jelly">
+      <img class="img-fluid" src="img/about-us-2.png" />
+    </div>
+    <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+      <!-- <h6>For Free</h6> -->
+      <h2>Our Approach</h2>
+      <p>
+        KITPLACE will provide you with all the information at your fingertips.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="site py-5">
+  <div
+    class="row align-items-center container my-5 mx-auto"
+    style="margin-bottom: 0 !important"
+  >
+    <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+      <!-- <h6>Made in India</h6> -->
+      <h2>Future prospects and services</h2>
+      <p>
+        We are always striving forward and our developers are constantly
+        discovering new ways to make your experience smoother and faster.
+      </p>
+    </div>
+    <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5 hov-anim-jelly">
+      <img class="img-fluid" src="img/about-us-3.png" />
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="page-footer font-small blue" style="background: purple">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white">
+    ©️ 2021 Copyright:
+    <a href="#" style="color: white">XYZ Corporation</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<style>
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+</style>

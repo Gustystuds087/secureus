@@ -1,0 +1,37 @@
+<% if(success && success.length) {%>
+<div class="mt-3">
+  <div
+    class="bg-green-400 alert alert-success alert-dismissible fade show"
+    role="alert"
+  >
+    <%=success%>
+    <button
+      type="button"
+      class="close mb-3"
+      data-dismiss="alert"
+      aria-label="Close"
+      style="padding: 0.5rem 1.25rem"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+<%}%> <% if(error && error.length) {%>
+<div class="mt-3">
+  <div
+    class="bg-red-700 alert alert-danger alert-dismissible fade show"
+    role="alert"
+  >
+    <%=error%>
+    <button
+      type="button"
+      class="close mb-3"
+      data-dismiss="alert"
+      aria-label="Close"
+      style="padding: 0.5rem 1.25rem"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+<%}%>

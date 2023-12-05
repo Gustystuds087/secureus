@@ -1,0 +1,52 @@
+<header>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"
+      ><img src="/img/logo.png" />KIT<b style="color: #FCD34D;">PLACE</b></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="<%= currentUser ? 'warrantys' : '/' %>"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us">About Us</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/pricing">Our Pricing</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/team">Our Team</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us">Contact Us</a>
+        </li>
+      </ul>
+      <%if(!currentUser) {%>
+      <a href="/login" class="text-white" style="text-decoration: none">
+        <button class="btn text-white" type="submit">Login</a
+      >
+      <%} else {%>
+      <a href="/logout" class="text-white" style="text-decoration: none">
+        <button class="btn text-white" type="submit">Logout</a
+      >
+      <%}%>
+    </div>
+  </nav>
+</header>

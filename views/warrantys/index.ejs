@@ -1,0 +1,200 @@
+<% layout('layouts/boilerplate') %>
+<div style="display: flex; align-items: center; margin-top: 20px">
+  <input
+    type="text"
+    class="search-bar"
+    placeholder="Search The Company"
+    id="searchName"
+  />
+
+  <button
+    class="btn btn-primary card-btn"
+    onclick="document.getElementById('add-card').style.display='block'"
+  >
+    Add Company
+  </button>
+</div>
+
+<!-- add card for popup -->
+
+<div id="add-card" class="modal">
+  <form
+    action="/warrantys"
+    method="POST"
+    class="needs-validation modal-content animate"
+    enctype="multipart/form-data"
+    novalidate
+  >
+    <div class="imgcontainer">
+      <h3>Add Company Details here</h3>
+      <span
+        onclick="document.getElementById('add-card').style.display='none'"
+        class="close-btn"
+        >&times;</span
+      >
+    </div>
+    <div class="form-group row">
+      <label for="company" class="col-sm-2 col-form-label"
+        >Company Name <sup style="color: red">*</sup></label
+      >
+      <div class="col-sm-10">
+        <input
+          type="text"
+          name="warranty[company]"
+          class="form-control col-sm-10 bottom-border p-3 mb-2 bg-none"
+          id="company"
+          required
+        />
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="product" class="col-sm-2 col-form-label"
+        >Package<sup style="color: red">*</sup></label
+      >
+      <div class="col-sm-10">
+        <input
+          type="text"
+          name="warranty[product]"
+          class="form-control col-sm-10 bottom-border p-3 mb-2 bg-none"
+          id="product"
+          required
+        />
+      </div>
+    </div>
+    <!-- <div class="form-group row">
+      <label for="purchase" class="col-sm-2 col-form-label"
+        >Apply Date<sup style="color: red">*</sup></label
+      >
+
+      <div class="col-sm-10">
+        <input
+          type="date"
+          name="warranty[purchase]"
+          class="form-control col-sm-10 bottom-border p-3 mb-2 bg-none"
+          id="purchase"
+          required
+        />
+      </div>
+    </div> -->
+    <div class="form-group row">
+      <label for="period" class="col-sm-2 col-form-label"
+        >Role<sup style="color: red">*</sup></label
+      >
+      <div class="col-sm-10">
+        <input
+          type="text"
+          name="warranty[period]"
+          class="form-control col-sm-10 bottom-border p-3 mb-2 bg-none"
+          id="period"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- <div class="form-group row">
+      <label for="file" class="col-sm-2 col-form-label"
+        >Warranty Card Photo</label
+      >
+      <div class="col-sm-10">
+        <input
+          type="file"
+          name="image"
+          class="form-control col-sm-10 bottom-border mb-4 bg-none"
+          value=""
+          id="file"
+        />
+      </div>
+    </div> -->
+    <div class="form-group row">
+      <label for="description" class="col-sm-2 col-form-label"
+        >Company Description<sup style="color: red">*</sup></label
+      >
+      <div class="col-sm-10">
+        <textarea
+          name="warranty[description]"
+          id="description"
+          cols="10"
+          rows="3"
+          class="form-control col-sm-10 bottom-border p-3 mb-2 bg-none"
+          required
+        ></textarea>
+      </div>
+    </div>
+    <div class="form-group row text-center">
+      <div class="col-10 col-sm-10 col-md-12 col-lg-12 mx-auto">
+        <a href="#" class="text-light">
+          <button
+            type="submit"
+            class="btn card-btn"
+            style="width: 150px !important"
+          >
+            Add Company
+          </button>
+        </a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="row" id="searchresults" style="margin-right: 12px"></div>
+
+<div class="row" id="allresults" style="margin-right: 12px">
+  <%for(let warranty of warrantys) {%>
+  <div class="wcard col-12 col-md-6 col-xl-4" style="padding: 2px">
+    <a href="warrantys/<%=warranty._id%>"
+      ><div class="cards">
+        <h2 style="color: black; font-size: 2.3rem; margin-bottom: 0px">
+          <%=warranty.company%> <br />
+        </h2>
+        <%=warranty.product%> <br />
+        <div class="row" style="margin-top: 15px">
+          <div class="col-6">
+            <b>Date of Purchase : </b><%=warranty.purchase%><br />
+          </div>
+          <div class="col-6">
+            <b>Date of Expiry : </b><%=warranty.expiry%><br />
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <%}%>
+</div>
+
+<script defer>
+  const cards = document.querySelectorAll('.wcard');
+  const allresults = document.querySelector('#allresults');
+  const searchresults = document.querySelector('#searchresults');
+
+  function performSearch(query) {
+    const items = [];
+    cards.forEach((card) =>
+      items.push({ text: card.innerText, item: card.cloneNode(true) })
+    );
+
+    const filteredItems = items.filter((item) =>
+      new RegExp(`.*${query}.*`, 'gmi').test(item.text)
+    );
+
+    return filteredItems;
+  }
+
+  function processInput(query) {
+    if (query !== '') {
+      const items = performSearch(query);
+      searchresults.innerHTML = '';
+      items.forEach((item) => searchresults.appendChild(item.item));
+
+      allresults.style.display = 'none';
+      searchresults.style.display = 'flex';
+    } else {
+      allresults.style.display = 'flex';
+      searchresults.style.display = 'none';
+    }
+  }
+
+  const searchInput = document.querySelector('#searchName');
+  searchInput.addEventListener('input', (e) => {
+    processInput(e.target.value);
+  });
+</script>
